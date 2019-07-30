@@ -17,7 +17,7 @@ public class RabbitTest {
     @Autowired
     private HelloSender helloSender;
 
-    @PostMapping("/hello1")
+    @PostMapping("/hello")
     public void hello() {
         for(int i = 0;i<100;i++){
             helloSender.send();
